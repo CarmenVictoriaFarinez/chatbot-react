@@ -27,6 +27,9 @@ const config = {
         chatButton: {
           backgroundColor: "purple",
         },
+      },
+      state: {
+        movieTitles: ["The Lord", "Con Air"]
       }
 }
 

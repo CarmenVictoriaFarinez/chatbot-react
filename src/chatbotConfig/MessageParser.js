@@ -1,4 +1,5 @@
-// MessageParser starter code
+// Analizador de mensajes: controla lo que sucede cuando el usuario envía un msj
+// esta vinculado al proveedor de acciones
 class MessageParser {
     constructor(actionProvider, state) {
       this.actionProvider = actionProvider;
@@ -6,8 +7,11 @@ class MessageParser {
     }
   
     parse(message) {
-      console.log(message)
+      const lowercase = message
+    if (lowercase.includes("Hello word")){
+     this.actionProvider.helloWordHandler()
     }
   }
+}
   
   export default MessageParser;
